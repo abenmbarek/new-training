@@ -1,0 +1,60 @@
+<template>
+  <div id="myCardComponent">
+    <v-card
+      id="vuetify_webpack_sample"
+      max-width="344"
+      class="mx-auto my-2">
+      <v-list-item>
+        <v-list-item-avatar color="grey"/>
+        <v-list-item-content>
+          <v-list-item-title class="headline"> {{ title }} </v-list-item-title>
+          <v-list-item-subtitle>by Kurt Wagner</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-img
+        src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
+        height="194"/>
+
+      <v-card-text>
+        Visit ten places on our planet that are undergoing the biggest changes today.
+      </v-card-text>
+
+      <v-card-actions>
+        <v-btn
+          text
+          color="deep-purple accent-4">
+          Read
+        </v-btn>
+        <v-btn
+          text
+          color="deep-purple accent-4">
+          Bookmark
+        </v-btn>
+        <div class="flex-grow-1"></div>
+        <v-btn icon>
+          <v-icon>mdi-heart</v-icon>
+        </v-btn>
+        <v-btn icon>
+          <v-icon>mdi-share-variant</v-icon>
+        </v-btn>
+      </v-card-actions>
+    </v-card>
+  </div>
+</template>
+
+<script>
+export default {
+  props : {
+    title : {
+      type: String,
+      default: 'default title',
+    }
+  },
+  data : () => ({
+
+  }),
+
+    
+};
+</script>
